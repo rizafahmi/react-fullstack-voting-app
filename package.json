@@ -17,7 +17,7 @@
     "mocha": "^3.0.2"
   },
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --recursive --reporter nyan",
+    "test": "mocha --compilers js:babel-core/register --recursive --reporter nyan --require ./test/test_helper.js",
     "test:watch": "npm run test -- --watch"
   },
   "babel": {
