@@ -1,5 +1,5 @@
 {
-  "name": "voting-server",
+  "name": "react-fullstack-voting-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,7 +12,11 @@
     "mocha": "^3.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers js:babel-core/register --recursive --reporter nyan",
+    "test:watch": "npm run test -- --watch"
+  },
+  "babel": {
+    "presets": ["es2015"]
   },
   "keywords": [],
   "author": "Riza Fahmi",
