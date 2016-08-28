@@ -20,7 +20,8 @@
   },
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --recursive --reporter nyan --require ./test/test_helper.js",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "start": "babel-node index.js"
   },
   "babel": {
     "presets": [
